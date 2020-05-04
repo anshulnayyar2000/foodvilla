@@ -1,0 +1,555 @@
+footer clearfix:before{
+  content: " ";
+
+  clear: both;
+  display: table;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  margin-top: 0;
+}
+html {
+
+  color: rgb(57, 13, 101);
+  font-size: 20px;
+  font-family: 'Lato','arial','sans-serif';
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+
+}
+.row{
+  max-width: 1140px;
+  margin: 0 auto 0 auto;
+  font-size: 130%;
+  color: rgb(101, 102, 99);
+
+}
+.features1{
+  font-size: 20px;
+  margin-left: auto;
+  text-align: center;
+
+}
+.features2{
+  text-align: center;
+  font-size: 18px;
+
+}
+h3{ font-size: 95%;
+  margin-bottom: 10px;
+  text-align: center;
+text-transform:  uppercase
+}
+header
+{
+  background-image : linear-gradient(rgba(41, 33, 39, 0.85),rgba(28, 23, 23, 0.83)),url(img/p4.jpg);
+  background-size: cover;
+  background-position: right;
+  height: 100vh;
+  background-attachment: fixed;
+}
+h1
+{
+  margin: 0;
+  color: white;
+  font-size: 300%;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  margin-bottom: 20px;
+}
+p{
+  font-size: 16px;
+}
+h2{
+  margin: 0;
+  color: grey;
+  font-size: 200%;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+h2:before {
+  display: inline-block;
+  background-color:orange;
+  height: 2px;
+  content: " ";
+  width: 1140px;
+  text-align: center;
+
+
+}
+h2:after {
+  display: block;
+  background-color:orange;
+  height: 2px;
+  content: " ";
+  width: 1140px;
+  text-align: center;
+
+
+}
+.back1{
+  position: absolute;
+  width: 1140px;
+  top: 46%;
+  left: 2%;
+  transform: translate(5px,5px);
+
+
+}
+/* here we have buttons*/
+.btn:link,
+.btn:visited
+{
+  display:inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-decoration: none;
+  border-radius: 360px;
+  color: orange;
+transition: background-color 0.6s, border 0.6s ,color 0.6s}
+
+.btn1:link,
+.btn1:hover
+
+{ margin-left: 0px;
+  border: 1px solid orange;
+
+  color: white;
+}
+
+.btn1:visited,
+.btn1:hover
+{
+  margin-left: 0px;
+  background-color: orange;
+  border:1px solid orange;
+}
+
+.btn2:link,
+.btn2:hover
+{ margin-left: 10px;
+  color: white;
+  border: 1px solid orange;
+
+}
+
+.btn2:visited,
+.btn2:hover
+{
+  margin-left: 10px;
+  background-color: orange;
+  border:1px solid orange;
+
+}
+
+.btn1:active
+{
+  background-color: rgb(255, 130, 0);
+}
+
+.btn2:active
+{
+  background-color: rgb(255, 130, 0);
+}
+.logo{
+  height: 100px;
+  width: 100px;
+  margin: 10px 0 0 10px;
+  border-radius: 50%;
+  float: left;
+}
+.navg
+{
+  margin-left: 200px;
+  float: right;
+  list-style: none;
+}
+.navg li{
+  display: inline-block;
+  margin-left: 30px;
+margin-top: 30px;
+  font-size: 20px;
+  font-weight: 400;
+
+
+}
+.navg li a{
+text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 90%;
+  margin-right: 20px;
+  transition: border-bottom 0.3s;
+
+
+}
+.navg li a:link ,
+.navg li a:visited{
+  padding-bottom: 4px;
+  text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 90%;
+    margin-right: 20px;
+      border-bottom: 2px solid tranparent;
+
+}
+.navg li a:hover ,
+.navg li a:visited{
+  padding-bottom: 4px;
+  text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 90%;
+    margin-right: 20px;
+    border-bottom: 2px solid orange;
+
+}
+.navg li a:active{
+  padding-bottom: 4px;
+text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 90%;
+  margin-right: 20px;
+  border-bottom: 2px solid rgb(255, 115, 0);
+}
+
+.big{
+  display: block;
+  font-size: 400%;
+  margin-bottom: 10px;
+  color: orange;
+  text-align: center;
+}
+.photo{
+  width: 100%;
+  list-style: none;
+  margin-top: 40px;
+  }
+
+.meals li
+{
+   width: 25%;
+  display: block;
+  float: left;
+}
+.meals-photo{
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  margin:1px;
+  display: block;
+  overflow: hidden;
+
+
+}
+.meals-photo img{
+  opacity: .5;
+  height: 250px;
+  width: 336px;
+  display: block;
+
+  transition: transform 0.9s,opacity 0.9s;
+
+}
+.meals-photo img:hover {
+  opacity: 1;
+
+  transform: scale(1.20);
+
+}
+.clearfix {zoom:1}
+.clearfix{
+  content: ".";
+  clear: both;
+  display: block;
+  height: 300px;
+  visibility:visible;
+}
+/*----------------settion 3 we have how it works---------------------*/
+.works{
+  background-color: rgb(249, 244, 244);
+}
+.work-step{
+  margin-right: 60px;
+}
+.work-photo{
+  width: 60%;
+}
+.work-step1{
+  display: inline;
+  border-radius: 50%;
+  border: 2px solid orange;
+  float: left;
+  padding: 2px;
+text-align: right;
+margin-right: :10px;
+margin-bottom: 10px;
+font-size: 25px;
+
+}
+.work-step11,.work-step22{
+  margin-bottom: 10px;
+  font-size: 21px;
+  text-align: left; padding-left: 40px;
+}
+.work-step11:last-of-type{
+  margin-bottom: 80px;
+}
+  .playstore1 img , .playstore2 img{
+    height: auto;
+    width: 260px;
+  }
+
+/*------------city------------*/
+
+.box img{
+  width: 100%;
+  height:200px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  font-size: 10px;
+  display: block;
+}
+.box i{
+  color: orange;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+.shef{
+  font-size: 25px;
+}
+.box a:link ,.box a:visited{
+  color: orange;
+  margin-right: 0px;
+  transition: color 1s;
+  text-decoration: none;
+}
+.box a:hover{
+  color: rgb(101, 102, 99);
+  margin-right: 0px;
+}
+.person, .shef , .twitter {
+  vertical-align: middle;
+  text-align: left;
+  margin-left: 5px;
+}
+/* ------------here we goes with the testimonials----------------*/
+.tests{
+
+  background-image: linear-gradient(rgba(68, 65, 65, 0.73),rgba(69, 70, 71, 0.49)),url(img/background.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: right;
+  background-attachment:fixed;
+
+}
+.maal img{
+  border-radius: 50%;
+  width: 60px;
+  height: 90px;
+  zoom:1;
+}
+blockquote{
+color:white;
+padding: 2px;
+font-style: italic;
+line-height: 145%;
+position: relative;
+margin-top: 20px;
+}
+blockquote:before{
+  content: "\201C";
+  font-size: 400%;
+  display:block;
+  position: absolute;
+  margin-top: -14px;
+  margin-left: -6px;
+}
+cite{
+  display: block;
+  margin-top: 20px;
+
+}
+.test{
+  color: white;
+}
+cite img{
+padding: 12px;
+    vertical-align: middle;
+}
+/*-----------------plans-----------------*/
+.plans {
+  background-color: #f4f4f4;
+
+}
+.plan11{
+  background-color: white;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  font-size: 28px;
+    box-shadow: 0 0 18px rgb(0, 0, 0);
+}
+.plan11 div{
+  padding:15px;
+
+
+  }
+
+  .head{
+    text-align: left;
+  }
+  .price{
+
+    font-size: 250%;
+    margin-bottom: 10px;
+    font-weight:100;
+      color: orange;
+
+  }
+  .price span{
+font-size: 25%;
+  }
+  .per-meal{
+    font-size: 18px;
+    text-align: justify;
+  }
+  .list-benefit ul{
+ list-style: none;
+  }
+.list-benefit i{
+  color: orange;
+  font-size: 45px;
+  margin-right: 7px;
+
+}
+.plan11 div:last-child{
+  text-align: center;
+  border: 0;
+  background-color:rgb(230, 230, 230);
+  padding-top: 35px;
+}
+.plan11 div:first-child{
+  background-color:rgb(230, 230, 230);
+}
+#upnow{
+  background-color: white;
+}
+
+#upnow:link,#upnow:hover{
+  background-color: orange;
+  color: white;
+}
+/* here we want to add our contract form */
+.review{
+  font-size: 17px;
+  margin: 0 auto;
+}
+label{
+  color: rgb(6, 16, 20);
+
+}
+input[type=text],input[type=message],
+textarea,
+select{
+  padding: 2px;
+  width: 50%;
+  border-radius: 2px;
+  border: 1px solid rgb(6, 16, 20);
+}
+*:focus{
+  outline: none;
+}
+#submt{
+background-color: white;
+  border-radius: 36px;
+  padding:12px;
+  border: 3px solid orange;
+  color:rgb(228, 142, 41);
+  margin-left: 120px;
+
+}
+#submt:link,#submt:hover{
+  border: 3px solid orange;
+  padding:12px;
+  background-color: orange;
+  color: white;
+  margin-left: 120px;}
+
+#submt:active{
+  border: 3px solid orange;
+  padding:12px;
+  background-color: rgb(224, 145, 9);
+  color: white;
+    margin-left: 120px;
+}
+/* footer */
+footer{
+padding: 30px;
+  background-color: rgb(37, 36, 36);
+}
+ .end11, .end11 li{
+  list-style: none;
+  float: left;
+}
+.end12 , .end12 li{
+  float: right;
+list-style: none;
+}
+.end11 li, .end12 li{
+  margin-left: 20px;
+  display: inline-block;
+  font-size: 20px;
+  color: rgb(200, 194, 196);
+}
+.end11 li:last-child, .end12 li:last-child{
+  margin-right: 0;
+}
+.end11 li a ,.end12 li a {
+  text-decoration: none;
+  border: 0;
+  color: rgb(121, 117, 118);
+}
+.end11 li a:link ,.end11 li a:hover,.end12 li a:link,.end12 li a:hover {
+  text-decoration: none;
+  border: 0;
+  color: white;
+}
+.scopy p{
+  color: rgb(121, 117, 118);
+  text-align: center;
+  margin-top: 60px;
+}
+.end12 li a:link,.end12 li a:hover {
+  font-size: 120%;
+}
+.ion-social-facebook:hover{
+  color: #3b5998;
+}
+.ion-social-twitter:hover{
+  color: #00aced;
+}
+.ion-social-instagram:hover{
+    color:#dd4b39;
+}
+.ion-social-googleplus:hover{
+    color:#517fa4;
+}
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-instagram,
+.ion-social-googleplus{
+  transition: color 1s;
+}
